@@ -1,0 +1,17 @@
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\bin\Debug\GroceryStore.exe.config
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\bin\Debug\GroceryStore.exe
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\bin\Debug\GroceryStore.pdb
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\obj\Debug\GroceryStore.csprojResolveAssemblyReference.cache
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\obj\Debug\GroceryStore.HomePage.resources
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\obj\Debug\GroceryStore.Properties.Resources.resources
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\obj\Debug\GroceryStore.csproj.GenerateResource.Cache
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\obj\Debug\GroceryStore.exe
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\obj\Debug\GroceryStore.pdb
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\obj\Debug\GroceryStore.CustomerEnterData.resources
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\obj\Debug\GroceryStore.FruitsOrVegetables.resources
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\obj\Debug\GroceryStore.ChooseProducts.resources
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\obj\Debug\GroceryStore.ChooseQuantity.resources
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\obj\Debug\GroceryStore.Receipt.resources
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\obj\Debug\GroceryStore.EmployeeLogIn.resources
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\obj\Debug\GroceryStore.Orders.resources
+c:\users\yohan\documents\visual studio 2015\Projects\GroceryStore\GroceryStore\obj\Debug\GroceryStore.ProcessOrder.resources
