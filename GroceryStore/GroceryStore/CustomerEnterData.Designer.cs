@@ -39,49 +39,54 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 38);
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(205, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(350, 25);
+            this.label1.Size = new System.Drawing.Size(350, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Enter your name";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtEnterName
             // 
-            this.txtEnterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtEnterName.Location = new System.Drawing.Point(73, 66);
+            this.txtEnterName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEnterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtEnterName.Location = new System.Drawing.Point(262, 123);
             this.txtEnterName.Name = "txtEnterName";
-            this.txtEnterName.Size = new System.Drawing.Size(236, 23);
+            this.txtEnterName.Size = new System.Drawing.Size(236, 30);
             this.txtEnterName.TabIndex = 1;
             // 
             // lblEnterAddres
             // 
+            this.lblEnterAddres.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEnterAddres.Enabled = false;
-            this.lblEnterAddres.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblEnterAddres.Location = new System.Drawing.Point(17, 154);
+            this.lblEnterAddres.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblEnterAddres.Location = new System.Drawing.Point(205, 225);
             this.lblEnterAddres.Name = "lblEnterAddres";
-            this.lblEnterAddres.Size = new System.Drawing.Size(345, 25);
+            this.lblEnterAddres.Size = new System.Drawing.Size(345, 38);
             this.lblEnterAddres.TabIndex = 2;
             this.lblEnterAddres.Text = "Enter your address";
             this.lblEnterAddres.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtEnterAddress
             // 
+            this.txtEnterAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEnterAddress.Enabled = false;
-            this.txtEnterAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtEnterAddress.Location = new System.Drawing.Point(73, 182);
+            this.txtEnterAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtEnterAddress.Location = new System.Drawing.Point(262, 266);
             this.txtEnterAddress.Multiline = true;
             this.txtEnterAddress.Name = "txtEnterAddress";
-            this.txtEnterAddress.Size = new System.Drawing.Size(236, 67);
+            this.txtEnterAddress.Size = new System.Drawing.Size(236, 114);
             this.txtEnterAddress.TabIndex = 3;
             // 
             // btnContinue
             // 
+            this.btnContinue.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnContinue.Image = ((System.Drawing.Image)(resources.GetObject("btnContinue.Image")));
             this.btnContinue.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnContinue.Location = new System.Drawing.Point(102, 284);
+            this.btnContinue.Location = new System.Drawing.Point(291, 408);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(184, 50);
             this.btnContinue.TabIndex = 4;
@@ -91,10 +96,12 @@
             // 
             // checkHomeDelivery
             // 
+            this.checkHomeDelivery.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkHomeDelivery.AutoSize = true;
-            this.checkHomeDelivery.Location = new System.Drawing.Point(141, 134);
+            this.checkHomeDelivery.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkHomeDelivery.Location = new System.Drawing.Point(304, 198);
             this.checkHomeDelivery.Name = "checkHomeDelivery";
-            this.checkHomeDelivery.Size = new System.Drawing.Size(123, 17);
+            this.checkHomeDelivery.Size = new System.Drawing.Size(171, 24);
             this.checkHomeDelivery.TabIndex = 5;
             this.checkHomeDelivery.Text = "I want home delivery";
             this.checkHomeDelivery.UseVisualStyleBackColor = true;
@@ -104,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 359);
+            this.ClientSize = new System.Drawing.Size(752, 526);
             this.Controls.Add(this.checkHomeDelivery);
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.txtEnterAddress);
@@ -112,6 +119,7 @@
             this.Controls.Add(this.txtEnterName);
             this.Controls.Add(this.label1);
             this.Name = "CustomerEnterData";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

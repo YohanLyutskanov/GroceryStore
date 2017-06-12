@@ -55,6 +55,24 @@ namespace GroceryStore
             }
 
             con1.Close();
+
+            //Show all the products in the order
+            SqlConnection con2 = new SqlConnection(@"Data Source=DESKTOP-P74G1IQ\SQLEXPRESS;Initial Catalog=GroceryStore;Integrated Security=True");
+            con2.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT Product_Name as Product, Product_Quantity as \"Quantity (kg)\" FROM Product AS p JOIN Product_Order AS po ON p.Product_ID = po.Product_ID JOIN \"Order\" AS o ON po.Order_ID = o.Order_ID WHERE o.Order_ID='" + orderID + "'", con2);
+            DataTable data = new DataTable();
+            sda.Fill(data);
+
+            var commandBuilder = new SqlCommandBuilder(sda);
+            var dts = new DataSet();
+            sda.Fill(dts);
+            dataGridView1.ReadOnly = true;
+            
+            dataGridView1.DataSource = dts.Tables[0];
+            dataGridView1.AutoGenerateColumns = false;
+
+            con2.Close();
+
         }
 
         private void btnSelectOrder_Click(object sender, EventArgs e)

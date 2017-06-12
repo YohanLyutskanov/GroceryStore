@@ -38,7 +38,6 @@ namespace GroceryStore
 
                 con.Close();
 
-
                 this.Hide();
                 ProcessOrder po = new ProcessOrder(employeeID, orderID);
                 po.ShowDialog();
@@ -48,7 +47,7 @@ namespace GroceryStore
                 MessageBox.Show("There are no orders to be processed");
                 SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-P74G1IQ\SQLEXPRESS;Initial Catalog=GroceryStore;Integrated Security=True");
                 con.Open();
-                SqlDataAdapter a = new SqlDataAdapter("SELECT * FROM \"Order\" where Order_Status  COLLATE Latin1_General_CS_AS LIKE 'Unprocessed'order by Order_Date Desc", con);
+                SqlDataAdapter a = new SqlDataAdapter("SELECT * FROM \"Order\" where Order_Status  COLLATE Latin1_General_CS_AS LIKE 'Unprocessed'", con);
 
                 var t = new DataTable();
                 a.Fill(t);

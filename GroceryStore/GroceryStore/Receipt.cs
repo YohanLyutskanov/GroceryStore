@@ -25,7 +25,7 @@ namespace GroceryStore
             this.totalPrice = totalPrice;
             InitializeComponent();
 
-            //Create columns in Shopping cart table
+            //Fill Product name and quantity in the receipt
             SqlConnection con1 = new SqlConnection(@"Data Source=DESKTOP-P74G1IQ\SQLEXPRESS;Initial Catalog=GroceryStore;Integrated Security=True");
             SqlDataAdapter sda = new SqlDataAdapter("SELECT Product_Name as Product, Product_Quantity as \"Quantity (kg)\" FROM Product AS p JOIN Product_Order AS po ON p.Product_ID = po.Product_ID JOIN \"Order\" AS o ON po.Order_ID = o.Order_ID WHERE o.Client_ID='" + clientID + "'", con1);
             DataTable data = new DataTable();
@@ -68,12 +68,6 @@ namespace GroceryStore
             cmd.ExecuteNonQuery();
             con.Close();
 
-            //SqlConnection con1 = new SqlConnection(@"Data Source=DESKTOP-P74G1IQ\SQLEXPRESS;Initial Catalog=GroceryStore;Integrated Security=True");
-            //con1.Open();
-            //SqlCommand cmd1 = new SqlCommand("delete from  \"Order\"  where Order_Status like null", con1);
-            //cmd1.ExecuteNonQuery();
-            //con1.Close();
-
             this.Hide();
             CustomerEnterData ced = new CustomerEnterData();
             ced.ShowDialog();
@@ -82,6 +76,8 @@ namespace GroceryStore
 
         private void Receipt_Load(object sender, EventArgs e)
         {
+            this.dataGridView2.DefaultCellStyle.Font = new Font("Microsoft Sans Serif", 12);
+
             lblTotalPrice.Text = totalPrice;
         }
     }

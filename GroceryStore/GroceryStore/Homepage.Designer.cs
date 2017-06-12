@@ -35,6 +35,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(12, 44);
             this.label1.Name = "label1";
@@ -46,6 +47,7 @@
             // 
             // btnCustomer
             // 
+            this.btnCustomer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnCustomer.Location = new System.Drawing.Point(12, 130);
             this.btnCustomer.Name = "btnCustomer";
@@ -57,6 +59,7 @@
             // 
             // btnEmployee
             // 
+            this.btnEmployee.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnEmployee.Location = new System.Drawing.Point(148, 130);
             this.btnEmployee.Name = "btnEmployee";

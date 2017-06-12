@@ -90,6 +90,11 @@ namespace GroceryStore
                 sum += Double.Parse(dataGridView2.Rows[n].Cells[3].Value.ToString());
                 lblTotalPrice.Text = sum.ToString("0.00");
             }
+
+            this.dataGridViewProducts.DefaultCellStyle.Font = new Font("Microsoft Sans Serif", 12);
+            this.dataGridView2.DefaultCellStyle.Font = new Font("Microsoft Sans Serif", 12);
+
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -160,7 +165,7 @@ namespace GroceryStore
 
 
 
-        private void btnDelete_Click(object sender, EventArgs e)    
+        private void btnDelete_Click(object sender, EventArgs e)
         {
             try
             {
@@ -195,14 +200,15 @@ namespace GroceryStore
                 {
                     int n = row.Index;
                     dataGridView2.Rows[n].Cells[3].Value =
-                        (Decimal.Parse(dataGridView2.Rows[n].Cells[1].Value.ToString()) *
-                        Decimal.Parse(dataGridView2.Rows[n].Cells[2].Value.ToString())).ToString();
+                       (decimal)(Decimal.Parse(dataGridView2.Rows[n].Cells[1].Value.ToString()) *
+                        Decimal.Parse(dataGridView2.Rows[n].Cells[2].Value.ToString()));
                     sum += Double.Parse(dataGridView2.Rows[n].Cells[3].Value.ToString());
                     lblTotalPrice.Text = sum.ToString("0.00");
                 }
 
                 MessageBox.Show("The product was successfully removed from your cart!");
             }
+
             catch (Exception)
             {
                 MessageBox.Show("Your cart is empty");

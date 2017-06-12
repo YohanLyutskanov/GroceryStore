@@ -41,6 +41,7 @@
             // 
             // listOrders
             // 
+            this.listOrders.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.listOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listOrders.FormattingEnabled = true;
             this.listOrders.ItemHeight = 25;
@@ -51,6 +52,7 @@
             // 
             // btnSelectOrder
             // 
+            this.btnSelectOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSelectOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnSelectOrder.Location = new System.Drawing.Point(65, 259);
             this.btnSelectOrder.Name = "btnSelectOrder";
@@ -76,6 +78,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(12, 33);
             this.label1.Name = "label1";
